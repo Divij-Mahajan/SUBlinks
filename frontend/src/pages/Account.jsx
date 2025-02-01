@@ -269,7 +269,7 @@ export const Account = () => {
                                                     <Button onClick={()=>{
                                                         transferTokensWithJobStatus({
                                                             network_name:"SOLANA_DEVNET",
-                                                            token_address:"native",
+                                                            token_address:"",
                                                             recipient_address:inputDev,
                                                             quantity:quantityDev
                                                         }).then((e)=>console.log(e)).catch((e)=>console.log(e))
