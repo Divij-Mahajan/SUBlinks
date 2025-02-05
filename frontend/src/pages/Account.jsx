@@ -230,7 +230,16 @@ export const Account = () => {
                                                         min="0"
                                                         max="10.234"
                                                     />
-                                                    <Button>Send</Button>
+                                                    <Button onClick={()=>{
+                                                        transferTokensWithJobStatus({
+                                                            network_name:"SOLANA",
+                                                            token_address:"",
+                                                            recipient_address:inputMain,
+                                                            quantity:quantityMain
+                                                        }).then((e)=>console.log(e)).catch((e)=>console.log(e))
+                                                    }}>
+                                                        Send
+                                                    </Button>
                                                 </div>
                                             </div>
                                         </div>
