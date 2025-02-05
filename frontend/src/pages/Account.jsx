@@ -233,7 +233,7 @@ export const Account = () => {
                                                     <Button onClick={()=>{
                                                         transferTokensWithJobStatus({
                                                             network_name:"SOLANA",
-                                                            token_address:"",
+                                                            token_address:"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                                                             recipient_address:inputMain,
                                                             quantity:quantityMain
                                                         }).then((e)=>console.log(e)).catch((e)=>console.log(e))
@@ -278,7 +278,7 @@ export const Account = () => {
                                                     <Button onClick={()=>{
                                                         transferTokensWithJobStatus({
                                                             network_name:"SOLANA_DEVNET",
-                                                            token_address:"",
+                                                            token_address:"4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
                                                             recipient_address:inputDev,
                                                             quantity:quantityDev
                                                         }).then((e)=>console.log(e)).catch((e)=>console.log(e))
